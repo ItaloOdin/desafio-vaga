@@ -1,0 +1,96 @@
+.todo-body{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    .addTask-button{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+.tasks-container{
+    min-width: 25vw;
+    min-height: 30vw;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+
+    .primary-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .primary-button-task{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background-tela{
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;   
+        display: flex;           
+        flex-direction: column;  
+        gap: 25px;
+
+    }
+
+    .title{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .task{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border: 1px dashed rgb(192, 192, 192);
+        border-radius: 10px;
+
+        .task-box{
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+        }
+
+        .task-box-completed{
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(7, 150, 211, 1);
+            background-color: rgba(160, 220, 246, 1);
+            border-radius: 4px
+            ;
+        }
+        .task-delete{
+            cursor: pointer;
+        }
+    }
+
+    .completed{
+        text-decoration: line-through;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border: 1px dashed rgb(192, 192, 192);
+        border-radius: 10px;
+    }
+}
